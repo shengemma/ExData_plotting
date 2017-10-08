@@ -9,8 +9,7 @@ subMetering2<-as.numeric(dt$Sub_metering_2)
 subMetering3<-as.numeric(dt$Sub_metering_3)
 
 png("plot3.png",width = 480, height = 480)
-plot(datetime, subMetering1, ylab="Energy Submetering", xlab="")
-#plot(datetime, subMetering1, type = "l", ylab ="Energy Submetering", xlab= "")
+plot(datetime, subMetering1, type = "l", ylab ="Energy Submetering", xlab= "")
 lines(datetime, subMetering2, type = "l",col = "red")
 lines(datetime, subMetering3, type = "l", col = "blue")
 
